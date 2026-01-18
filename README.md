@@ -15,11 +15,7 @@ El projecte inclou:
 - Imatges descriptives i enllaços a fonts originals.
 - Referències a iniciatives i estàndards com el **W3C WAI**.
 - Informació sobre experts reconeguts en UX i usabilitat, com **Jakob Nielsen** i **Steve Krug**.
-
-## Captura del projecte
-
-![Vista del projecte](img/Captura1-github.jpg)
-
+  
 ## Tecnologies utilitzades
 
 - HTML5 i semàntica adequada (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
