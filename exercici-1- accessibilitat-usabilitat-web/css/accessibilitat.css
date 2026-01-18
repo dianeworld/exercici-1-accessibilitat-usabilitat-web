@@ -1,0 +1,214 @@
+/* Accessibilitat.html – estils específics de la pàgina
+   Només modifico el contingut, no el header ni el menú */
+
+/* Dues columnes - general -------------------------------------*/
+.dues-columnes {
+    margin: 1rem 0;         /* espai vertical */
+    overflow: hidden;       /* neteja floats */
+    outline: 2px solid red; /* contorn de debug */
+}
+
+/* Columnes iguals per defecte */
+.dues-columnes section,
+.dues-columnes figure {
+    width: 48%;             /* dues columnes iguals */
+    float: left;            /* alineació horitzontal */
+    margin-right: 4%;       /* separació entre columnes */
+}
+
+/* Últim element sense marge dret */
+.dues-columnes section:last-child,
+.dues-columnes figure:last-child {
+    margin-right: 0;
+}
+
+.dues-columnes section {
+    background-color: #eef1f4; /* fons clar */
+    padding: 1.5rem;           /* padding intern */
+}
+
+/* ------------------------------- */
+
+.vermell {
+    color: red;
+}
+
+.verd {
+    color: green;
+}
+
+
+.img-dreta {
+    float: right;
+    margin: 0 0 1.5rem 1.5rem; /* separació del text */
+    max-width: 500px;     /* ajusta segons convingui */
+    height: auto;
+}
+
+.accessibilitat-page .dues-columnes figure { 
+    width: 30%;           /* figura més estreta */
+    float: left;          /* al costat del text */
+}
+
+
+/* Ajusto el contenidor principal només per aquesta pàgina,
+   mantenint la mateixa amplada màxima que la resta del web */
+.accessibilitat-page main.contingut-principal { 
+    max-width: 1100px;     /* mantinc coherència amb el layout general */
+    width: 95%;            /* aprofito millor l'espai en pantalles grans */
+    margin: 0 auto;        /* centro el contingut horitzontalment */
+    padding: 1rem;         /* afegeixo una mica més d’aire visual */
+}
+
+/* Modifico la distribució de les dues columnes només aquí,
+   perquè el text tingui més pes visual que la imatge */
+.accessibilitat-page .dues-columnes section { 
+    width: 100%;           /* dono prioritat al text */
+    float: left;           /* permet col·locar la figura al costat */
+    margin-right: 2%;      /* separació amb la imatge */
+}
+
+.accessibilitat-page .dues-columnes figure { 
+    width: 30%;            /* la imatge ocupa menys espai que el text */
+    float: left;           /* alineació horitzontal amb la secció */
+}
+
+/* Imatge específica de la poma:
+   la faig flotar perquè el text s’adapti al seu voltant */
+.accessibilitat-page .imatgeflotant-poma { 
+    float: right;          /* col·loco la imatge a la dreta del text */
+    width: 60%;            /* mida proporcional al contenidor */
+    max-width: 500px;      /* evito que sigui massa gran en pantalles grans */
+    height: auto;          /* mantinc la proporció original */
+    margin: 0;             /* evito marges innecessaris */
+}
+
+/* Bloc de pautes d’accessibilitat:
+   el destaco visualment amb un fons diferent */
+.accessibilitat-page .pautes {
+    background-color: #d0d7de; /* gris més fosc per diferenciar el bloc */
+    padding: 1rem;             /* espai interior per millorar la llegibilitat */
+    margin-bottom: 1.5rem;     /* separació amb el contingut següent */
+    border-radius: 5px;        /* lleuger arrodoniment per suavitzar el disseny */
+}
+
+.accessibilitat-page .pautes a {
+    display: block;       /* cada link a la seva pròpia línia */
+    text-align: right;    /* alineat a la dreta */
+    margin-top: 0.3rem;   /* separació respecte al text anterior */
+    color: #007bff;       /* opcional: color diferent */
+    text-decoration: underline; /* opcional: que es vegi com a link */
+}
+
+
+/* Títol del bloc de pautes:
+   el faig destacar però sense trencar la jerarquia */
+.accessibilitat-page .pautes h2 {
+    background-color: #f9fcfd; /* fons més clar que el bloc */
+    padding: 0.4rem 0.6rem;    /* espai interior del títol */
+    margin-bottom: 0.8rem;     /* separació amb el contingut */
+}
+
+/* Ajusto les llistes perquè mantinguin la coherència visual */
+.accessibilitat-page .pautes ul {
+    margin-left: 1rem;         /* indentació clara però no excessiva */
+}
+
+.accessibilitat-page .pautes li {
+    margin-bottom: 0.4rem;     /* separació entre ítems */
+}
+
+/* Secció del vídeo:
+   la centro i evito que sobresurti del contenidor */
+.accessibilitat-page .video-accessibilitat {
+    max-width: 100%;       /* mai supera l’amplada del contenidor */
+    margin: 1rem auto;     /* espai superior i inferior */
+}
+
+/* Faig el vídeo responsive mantenint la proporció 16:9 */
+.accessibilitat-page .video-accessibilitat iframe {
+    width: 100%;           /* ocupa tot l’ample disponible */
+    max-width: 600px;      /* límit perquè no sigui massa gran */
+    aspect-ratio: 16 / 9;  /* proporció estàndard de vídeo */
+    display: block;        /* evita espais estranys */
+    margin: 0 auto;        /* el centro horitzontalment */
+}
+
+/* Bloc general de barreres:
+   cada tipus de barrera queda clarament separat */
+.barreres { 
+    margin-bottom: 1rem;        /* separació entre blocs */
+    padding: 1rem;              /* espai interior */
+    background-color: #eef1f4;  /* fons suau per destacar el contingut */
+    width: 100%;                /* ocupa tot l’ample disponible */
+}
+
+/* Títol principal de cada bloc de barreres */
+.barreres h3 { 
+    background-color: #dfe6ec;  /* lleuger contrast amb el fons */
+    padding: 0.4rem 0.6rem;     /* millora la llegibilitat */
+    margin-bottom: 0.8rem;      /* separació amb el contingut */
+}
+
+/* Subtítols dins de cada barrera:
+   reforço la jerarquia visual */
+.barreres h4 { 
+    margin-left: 1rem;          /* indentació per indicar nivell inferior */
+    background-color: #f6f8fa;  /* fons més clar */
+    padding: 0.3rem 0.5rem;     /* espai interior */
+    margin-bottom: 0.6rem;      /* separació amb el text */
+}
+
+/* Llistes dins les barreres */
+.barreres ul { 
+    margin-left: 2.5rem;        /* alineació coherent amb la resta de llistes */
+    list-style-type: disc;      /* punts visibles */
+}
+
+.barreres ul li a {
+    float: right;         /* mou l’enllaç a la dreta */
+    margin-left: 1rem;    /* separació mínima amb el text */
+    margin-top: 0.2rem;   /* ajust vertical si cal */
+}
+
+
+/* Espai entre elements de les llistes */
+.barreres li { 
+    margin-bottom: 0.4rem;
+}
+
+/* Colors de suport per reforçar significat visual */
+.text-verd {
+    color: green;               /* indico contingut correcte o positiu */
+}
+
+.text-vermell {
+    color: rgb(254, 5, 5);      /* indico error, alerta o problema */
+}
+
+.pautes h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pautes p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.pautes a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.pautes ul {
+    padding-left: 20px;
+}
+
+.pautes li {
+    margin-bottom: 10px;
+}
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El lloc web de l'accessibilitat i la usabilitat</title>
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibilitat.css">
+</head>
+
+<body class="accessibilitat-page">
+
+    <!-- Capçalera -->
+    <header class="capcalera-web">
+        <h1>El lloc web de l'accessibilitat i la usabilitat</h1>
+    </header>
+
+    <!-- Menú -->
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">inici</a></li>
+            <li><a href="accessibilitat.html">accessibilitat</a></li>
+            <li><a href="usabilitat.html">usabilitat</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contingut principal -->
+    <main class="contingut-principal">
+        <!-- Barreres I -->
+        <div class="dues-columnes">
+            <section class="barreres">
+                <h2>Barreres a l’accessibilitat (I)</h2>
+                <h3>Discapacitats visuals (1)</h3>
+
+                <img src="img/alt_poma.jpg" alt="Poma vermella com a exemple d’imatge amb text alternatiu"
+                    class="img-dreta">
+
+                <ul>
+                    <li>
+                        Imatges sense un text alternatiu que descrigui el contingut.
+                        <span class="vermell">alt="yellow apple"</span>
+                    </li>
+                    <li>
+                        Imatges complexes com ara gràfics de barres o estadístiques, sense
+                        una descripció detallada (l’atribut “alt” permet només fins a 150
+                        caràcters).
+                        <span class="verd">alt="hand reaching for a yellow apple hanging from the tree"</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Barreres II -->
+        <div class="dues-columnes">
+            <section class="barreres">
+                <h2>Barreres a l’accessibilitat (II)</h2>
+                <h3>Discapacitats visuals (2)</h3>
+
+                <section class="video-accessibilitat">
+                    <h4>Vídeo explicatiu sobre accessibilitat web</h4>
+                    <iframe width="1100" height="600" src="https://www.youtube.com/embed/sI6hXHAfqs0"
+                        title="Basics of Accessibility, WCAG's Non Text Content"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <p>
+                        Aquest vídeo explica com les pautes d’accessibilitat (WCAG) requereixen alternatives textuals
+                        per a contingut no text, com imatges, taules i vídeos perquè les persones amb discapacitats
+                        puguin accedir al seu contingut.
+                    </p>
+                </section>
+
+                <ul>
+                    <li>Elements multimèdia sense descripció textual.</li>
+                    <li>Taules incomprensibles en lectura seqüencial.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Barreres III -->
+        <div class="dues-columnes">
+            <section class="barreres">
+                <h2>Barreres a l’accessibilitat (III)</h2>
+                <h3>Discapacitats visuals (3)</h3>
+                <ul>
+                    <li>Mides de lletra absolutes. Es recomana <code>em</code> o <code>%</code>. <a
+                            href="http://pxtoem.com/" target="_blank">pxtoem.com</a></li>
+                    <li>Ús exclusiu del color per ressaltar informació.</li>
+                    <li>Barrejar estructura i presentació.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Barreres IV -->
+        <div class="dues-columnes">
+            <section class="barreres">
+                <h2>Barreres a l’accessibilitat (IV)</h2>
+                <h3>Discapacitats auditives</h3>
+                <ul>
+                    <li>Absència de subtítols o transcripcions.</li>
+                    <li>Dificultats de comprensió amb textos molt llargs.</li>
+                </ul>
+
+                <h4>Discapacitats motrius</h4>
+                <ul>
+                    <li>Elements d’interacció massa petits.</li>
+                    <li>Impossibilitat d’ús amb teclat.</li>
+                    <li>Temps de resposta limitats.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Pautes -->
+        <section class="pautes">
+            <h2>Pautes d’accessibilitat</h2>
+            <p>Les <strong>Pautes d’Accessibilitat al Contingut Web</strong> (WCAG) han estat desenvolupades pel W3C.
+            </p>
+            <p><a href="http://www.w3.org/WAI/" target="_blank">Web Accessibility Initiative (WAI)</a></p>
+            <ul>
+                <li><strong>1999</strong> – WCAG 1.0<br>
+                    <a href="http://www.discapnet.es/web_accesible/wcag10/WAI-WEBCONTENT-19990505_es.html"
+                        target="_blank">
+                        WCAG 1.0 (castellà)
+                    </a>
+                </li>
+                <li><strong>2008</strong> – WCAG 2.0<br>
+                    <a href="http://www.sidar.org/traducciones/wcag20/es/" target="_blank">
+                        WCAG 2.0 (castellà)
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Eines -->
+        <section>
+            <h3>Eines d’avaluació automàtica en línia</h3>
+            <ul>
+                <li><a href="http://tawdis.net/" target="_blank">TAW</a></li>
+                <li><a href="http://wave.webaim.org" target="_blank">WAVE</a></li>
+                <li><a href="http://www.cynthiasays.com/" target="_blank">Cynthia Says</a></li>
+                <li><a href="http://examinator.ws/" target="_blank">Examinator</a></li>
+            </ul>
+        </section>
+
+        <!-- Col·laboracions -->
+        <section class="seccio-col·laboracions">
+            <h2>Col·laboracions</h2>
+            <h3>SOC &ndash; vei d'Ocupació de Catalunya</h3>
+            <p>Generalitat · UE · Fons Social Europeu</p>
+            <figure>
+                <img src="img/3-logos.jpg" alt="Logotips col·laboradors">
+            </figure>
+        </section>
+
+    </main>
+
+    <!-- Peu de pàgina -->
+    <footer class="peu-pagina">
+        <p>&copy; Diana Urbano, per CIFO Barcelona La Violeta</p>
+    </footer>
+
+</body>
+
+</html>

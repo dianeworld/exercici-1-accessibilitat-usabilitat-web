@@ -1,0 +1,334 @@
+@charset "utf-8"; /* Defineix la codificació del fitxer CSS (permet accents i caràcters especials) */
+
+/* Responsive: mòbils i tablets */
+@media (max-width: 768px) {
+
+
+    /* Les columnes passen a ocupar tot l’ample i es col·loquen una sota l’altra ------------------*/
+    .dues-columnes section,
+    .dues-columnes figure {
+        width: 100%;          /* ocupa tot l'ample del contenidor */
+        float: none;          /* elimina la flotació */
+        margin-right: 0;      /* elimina el marge lateral */
+        margin-bottom: 1.5rem;/* espai entre columnes */
+    }
+
+    /* Imatges específiques de Steve Krug adaptades a mòbil --------------------------------------*/
+    .seccio-usabilitat-experts img[src*="steve-krug"] { /* src es atribut imatge,*= conté
+        max-width: 100%;      /* la imatge no supera l’ample del contenidor */
+        float: none;          /* elimina flotació si n’hi havia */
+        display: block;       /* permet centrar la imatge */
+        margin: 0 auto 1rem auto; /* centra i afegeix espai inferior */
+    }
+}
+
+.autor {
+    font-weight: bold;
+    font-style: italic;
+    color: #047cf4;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.h2-government {
+    color: #f9fafc;         /* color del text */
+    font-family: 'Aleo', serif;  /* font diferent */
+    font-size: 1.7rem;      /* mida més gran o menor */
+    /* background-color: #fcfdff;  fons clar blau */
+    padding: 0.1rem 0.2rem; /* espai intern */
+    border-radius: 0x;     /* cantonades arrodonides */
+    display: inline-block;  /* ajusta el padding només al text */
+}
+
+/* Reset general ---------------------------------------------------------------------------------*/
+* {
+    margin: 0;              /* elimina marges per defecte */
+    padding: 0;             /* elimina padding per defecte */
+    box-sizing: border-box; /* inclou padding i border dins ample - evita problemes de càlcul amb columnes, contenidors i responsive. */
+}
+
+/* Cos i tipografia ------------------------------------------------------------------------------*/
+body {
+    font-family: 'montserrat', sans-serif; /* font principal */
+    background-color: #f4f4f4;             /* fons pàgina clar */
+    color: #222;                           /* color text fosc */
+    line-height: 1.5;                      /* espai entre línies */
+}
+
+
+/* Capçalera ------------------------------------------------------------------------------------*/
+header.capcalera-web {
+    background-color: #f27272; /* fons fosc */
+    color: white;               /* text blanc */
+    text-align: center;         /* centra contingut */
+    padding: 2rem 1rem;         /* espai intern */
+}
+
+header.capcalera-web h1 {
+    font-family: 'Aleo', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header.capcalera-web p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Menú principal -------------------------------------*/
+nav.menu-principal {
+    background-color: #e6463a;
+    font-size: 2rem;
+}
+
+nav.menu-principal ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav.menu-principal li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav.menu-principal a {
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav.menu-principal a:hover,
+nav.menu-principal a:focus {
+    text-decoration: underline;
+}
+
+/* Contingut principal -------------------------------------*/
+main.contingut-principal {
+    max-width: 1100px; /* amplada màxima */
+    margin: 0rem auto; /* centrat i marge superior/inferior */
+    padding: 0 1rem ;   /* padding horitzontal */
+    background-color: white; /* fons blanc */
+}
+
+
+/* Text general -------------------------------------*/
+p {
+    margin: 14px 0; /* espai vertical entre paràgrafs */
+}
+
+/* Seccions -------------------------------------*/
+section {
+    margin: 1rem 0;           /* espai vertical entre seccions */
+    outline: 1px dashed red;  /* contorn de debug */
+}
+
+section h2 {
+    font-family: 'aleo', serif;     /* font h2 diferent */
+    margin-bottom: 1rem;            /* espai inferior */
+    color: #2c3e50;                 /* color text */
+    background-color: rgba(0,0,0,0.07); /* fons clar semi-transparent */
+    display: inline-block;           /* ajusta padding a text */
+    padding: 0.1rem 0.5rem;         /* espai intern de la caixa color sota texte h2 */
+    border-radius: 0px;             /* cantonades arrodonides */
+    width: 100%;                    /* ocupa tot l'ample */
+}
+
+section h3 {
+    margin-bottom: 0.6rem; /* espai inferior h3 */
+    color: #34495e;        /* color text diferent */
+}
+
+section p {
+    margin-bottom: 0rem;   /* espai inferior paràgraf */
+}
+
+/* Dues columnes-------------------------------------*/
+.dues-columnes {
+    margin: 1rem 0;         /* espai vertical */
+    overflow: hidden;       /* neteja floats */
+    outline: 2px solid red; /* contorn de debug */
+}
+
+.dues-columnes section,
+.dues-columnes figure {
+    width: 48%;             /* dues columnes */
+    float: left;            /* alineació horitzontal */
+    margin-right: 4%;       /* separació entre columnes */
+}
+
+.dues-columnes section:last-child,
+.dues-columnes figure:last-child {
+    margin-right: 0;        /* últim element sense marge dret */
+}
+
+.dues-columnes section {
+    background-color: #eef1f4; /* fons clar */
+    padding: 1.5rem;           /* padding intern */
+}
+
+/* Secció government ocupa tota l’amplada -------------------------*/
+
+.dues-columnes .exemple-government {
+    width: 100%;                /* ocupa tot l'ample disponible del parent */
+    max-width: 1600px;          /* augmentem l'amplada màxima */
+    margin: 0 auto 1.0em auto; /* centra horitzontalment i marge inferior */
+    padding: 1.0rem;              /* espai intern */
+    background-color: #a9bdca;  /* fons clar */
+    float: none;                /* elimina qualsevol float */
+    clear: both;                /* neteja floats anteriors */
+}
+
+/* imatge dins la secció government */
+.exemple-government img {
+    width: 100%;     /* ocupa tot el contenidor */
+    height: auto;    /* manté proporció */
+    display: block;  /* elimina espai blanc sota la imatge */
+    margin-bottom: 0.5rem; /* marge inferior */
+}
+
+
+/* Figures -------------------------------------*/
+figure {
+    text-align: center;         /* centra contingut */
+    outline: 1px dotted red;    /* contorn de debug */
+}
+
+figure img {
+    max-width: 100%;            /* imatge no excedeix contenidor */
+    height: auto;               /* proporció correcta */
+}
+
+figcaption {
+    font-size: 0.9rem;          /* lletra més petita sota la imatge*/
+    color: #555;                /* color gris fosc */
+    margin-top: 0.5rem;         /* marge superior */
+}
+
+/* Imatges flotants -------------------------------------*/
+.imatge-flotant-w3c {
+    float: right;           /* floten a la dreta */
+    width: 100px;           /* ample fixe */
+    margin-right: 15px;     /* separació a la dreta */
+    margin-bottom: 10px;    /* separació inferior */
+}
+
+.imatge-flotant-steve {
+  float: left;
+  width: 260px;
+  margin-right: 8px; /* separació mínima */
+}
+
+.imatge-flotant-redbook {
+    float: right;          /* flotar a l'esquerra */
+    width: 380px;         /* ample desitjat */
+    margin-right: 15px;   /* separació amb el text */
+    margin-bottom: 0px;  /* espai inferior */
+    height: auto;         /* proporció correcta */
+}
+
+.imatge-flotant-logo-steve {
+  float: left;
+  width: 150px;
+  margin-right: 7px; /* separació mínima */
+}
+
+/* Enllaços estil botó -------------------------------------*/
+main a {
+    display: inline-block;   /* block per padding clicable */
+    background-color: #fff;  /* fons blanc */
+    color: #d61717;             /* text negre */
+    border: 1px solid #f27272;  /* contorn negre */
+    padding: 0.5rem 1rem;    /* padding intern */
+    text-decoration: none;   /* sense subratllat */
+    font-weight: 600;        /* lletra semi-bold */
+}
+
+main a:hover,
+main a:focus {
+    background-color: #f0f0f0;   /* fons gris clar a hover */
+    outline: 2px solid #007bff;  /* contorn blau a focus */
+}
+
+/* Enllaços flotants -------------------------------------*/
+.link-government {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    clear: left;   /* no interfereix amb altres elements */
+}
+
+.link-barreres {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 4px;
+    clear: left;   /* no interfereix amb altres elements */
+    
+}
+
+
+.link-w3c {
+    display: inline-block;
+    margin-top:2px;
+    margin-bottom: 30px;
+    clear: left;   /* no interfereixen amb altres elements */
+}
+
+.link-jakob {
+    display: inline-block;
+    margin-top:2px;
+    margin-bottom: 30px;
+    clear: left;   /* no interfereixen amb altres elements */
+}
+
+
+
+.separador-experts {
+    border: none;                   /* elimina el border per defecte */
+    border-top: 3px solid hwb(0 100% 0%);     /* línia horitzontal gris */
+    margin-top: 40px;               /* espai a sobre de la línia */
+    margin-bottom: 20px;            /* espai sota la línia */
+    width: 100%;                     /* ocupa tota l'amplada del contenidor */
+}
+
+.link-nng {
+    display: inline-block;
+    margin-top: 10px;         /* pots ajustar */
+    margin-bottom: 20px;
+    clear: left;              /* no interfereixen amb altres elements */
+    
+    background-color: #8B0000; /* vermell sang de toro */
+    color: white;               /* text blanc */
+    text-decoration: none;      /* elimina subratllat */
+    padding: 5px 10px;          /* espai interior */
+    border-radius: 0px;         /* opcional, cantonades lleugerament arrodonides */
+    font-weight: bold;           /* opcional, text destacat */
+}
+
+
+
+/* Col.laboracions -------------------------------------*/
+.seccio-col·laboracions {
+    text-align: center;  /* centra tot el contingut */
+}
+
+.seccio-col·laboracions figure {
+    margin: 0 auto;      /* centra figures */
+}
+
+.seccio-col·laboracions img {
+    max-width: 80%;      /* imatges responsives */
+    height: auto;        /* proporció correcta */
+}
+
+
+/* etiquetes */
+
+code {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    color: #c7254e;
+}

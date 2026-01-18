@@ -1,0 +1,114 @@
+/* Usabilitat.html – estils específics de la pàgina
+   Només modifico el contingut, no el header ni el menú */
+
+/* Dues columnes - general -------------------------------------*/
+.dues-columnes {
+    margin: 1rem 0;         /* espai vertical */
+    overflow: hidden;       /* neteja floats */
+    outline: 2px solid rgb(255, 0, 0); /* contorn de debug per usabilitat */
+}
+
+/* Columnes iguals per defecte */
+.dues-columnes section,
+.dues-columnes figure {
+    width: 48%;             /* dues columnes iguals */
+    float: left;            /* alineació horitzontal */
+    margin-right: 4%;       /* separació entre columnes */
+}
+
+/* Últim element sense marge dret */
+.dues-columnes section:last-child,
+.dues-columnes figure:last-child {
+    margin-right: 0;
+}
+
+.dues-columnes section {
+    background-color: #f4f7f9; /* fons clar diferent de accessibilitat */
+    padding: 1.5rem;           /* padding intern */
+    border-radius: 5px;
+}
+
+/* Colorem els títols per ressaltar els principis */
+.dues-columnes h3 {
+    background-color: #d0e2f0; /* blau suau */
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+/* Destaquem alguns punts clau amb colors */
+.text-importancia {
+    color: #007bff; /* blau per punts importants */
+    font-weight: bold;
+}
+
+.text-alerta {
+    color: red; /* errors o avisos */
+}
+
+/* Imatges opcionals a la dreta */
+.img-dreta {
+    float: right;
+    margin: 0 0 1.5rem 1.5rem;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Ajusto el contenidor principal només per aquesta pàgina */
+.usabilitat-page main.contingut-principal { 
+    max-width: 1100px;     
+    width: 95%;            
+    margin: 0 auto;        
+    padding: 1rem;         
+}
+
+/* Secció de principis */
+.principis .dues-columnes section {
+    width: 100%;       /* full-width per destacar cada principi */
+    float: none;
+    margin-bottom: 1.5rem;
+}
+
+/* Opció de destacar exemples amb fons */
+.principis .exemple {
+    background-color: #e1f5fe; /* blau molt clar */
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-left: 4px solid #989a9d;
+}
+
+/* Llistes dins cada principi */
+.principis ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+}
+
+.principis li {
+    margin-bottom: 0.5rem;
+}
+
+/* Col·laboracions: igual que accessibilitat */
+.seccio-col·laboracions figure {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+}
+
+.seccio-col·laboracions figure:last-child {
+    margin-right: 0;
+}
+
+.usabilitat-page .seccio-col·laboracions img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Peu de pàgina */
+.usabilitat-page .peu-pagina {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f0f0f0;
+    
+}

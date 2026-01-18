@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ca"> <!-- idioma català -->
+
+<head> <!-- capçalera del document -->
+    <meta charset="UTF-8"> <!-- codificació -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+    <title>El lloc web de l'accessibilitat i la usabilitat</title> <!-- títol pestanya -->
+
+    <!-- fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- millora càrrega -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS extern -->
+</head>
+
+<body class="accessibilitat-page"> <!-- cos del document -->
+
+    <!-- capçalera -->
+    <header class="capcalera-web"> <!-- capçalera principal -->
+        <h1>El lloc web de l'accessibilitat i la usabilitat</h1> <!-- títol principal -->
+    </header>
+
+    <!-- menú de navegació -->
+    <nav class="menu-principal">
+        <ul style="margin-left: 20px;">
+            <li><a href="index.html">inici</a></li> <!-- enllaç inici -->
+            <li><a href="accessibilitat.html">accessibilitat</a></li> <!-- enllaç accessibilitat -->
+            <li><a href="usabilitat.html">usabilitat</a></li> <!-- enllaç usabilitat -->
+        </ul>
+    </nav>
+
+    <!-- contingut principal, dues imatges principals en block de dues columnes -->
+    <main class="contingut-principal">
+
+        <!-- dues columnes imatges -->
+        <div class="dues-columnes dues-columnes-imatges">
+            <figure class="columna-accessibilitat">
+                <img src="img/accessibilitat.jpg" alt="Imatge relacionada amb l'accessibilitat web">
+                <a
+                    href="https://www.ux-republic.com/ca/les-m%C3%BAltiples-possibilitats-de-lia-al-servei-de-l%27accessibilitat-i-la-inclusi%C3%B3/">
+                    Font de la imatge
+                </a>
+            </figure>
+
+            <figure class="columna-usabilitat">
+                <img src="img/usabilitat.jpg" alt="Imatge relacionada amb la usabilitat web">
+                <a
+                    href="https://www.ux-republic.com/ca/les-m%C3%BAltiples-possibilitats-de-lia-al-servei-de-l%27accessibilitat-i-la-inclusi%C3%B3/">
+                    Font de la imatge
+                </a>
+            </figure>
+        </div>
+
+        <!-- dues columnes text -->
+        <div class="dues-columnes dues-columnes-text">
+
+            <!-- secció accessibilitat -->
+            <section class="seccio-accessibilitat">
+                <h2>Accessibilitat - Què és?</h2>
+                <p>
+                    L’<strong>accessibilitat web</strong> té com a objectiu aconseguir que les pàgines web puguin
+                    ésser utilitzades pel màxim nombre de persones, siguin quins siguin els seus coneixements o
+                    capacitats personals i independentment de les característiques tècniques del dispositiu que
+                    utilitzin per accedir a internet.
+                </p>
+
+                <p><strong>Barreres a l'accessibilitat:</strong></p>
+                <ul style="margin-left: 20px;">
+                    <li>(I) - Discapacitats visuals (1)</li>
+                    <li>(II) - Discapacitats visuals (2)</li>
+                    <li>(III) - Discapacitats visuals (3)</li>
+                    <li>(IV) - Discapacitats auditives i motrius</li>
+                    <li>Pautes WCAG - recomanacions WAI</li>
+                </ul>
+
+                <a href="accessibilitat.html" style="float: left;" class="link-barreres">
+                    Barreres a l'accessibilitat
+                </a>
+            </section>
+
+            <!-- secció usabilitat -->
+            <section class="seccio-usabilitat">
+                <h2>Usabilitat - Què és?</h2>
+                <p>
+                    La <strong>usabilitat</strong> (de l'anglès <strong><span
+                            lang="en"><em>usability</em></span></strong>)
+                    és la facilitat amb què la gent pot usar una eina o un <strong><span
+                            lang="en"><em>giny</em></span></strong>,
+                    per aconseguir un objectiu concret.
+                </p>
+                <p>
+                    El terme també pot fer referència als mètodes per mesurar la usabilitat i a l'estudi dels principis
+                    que doten un objecte.
+                </p>
+                <p>Una web <strong>UX - Usability</strong> és clara i intuïtiva.</p>
+                <p>“Usabilitat és l’atribut de qualitat de les interfícies”</p>
+                <p><strong>“Usabilitat és l’atribut de qualitat que mesura com són de fàcils d'utilitzar les
+                        interfícies”</strong></p>
+                <p class="autor">Jacob Nielsen</p>
+            </section>
+
+        </div>
+
+        <!-- dues columnes: projectes - informació -->
+        <div class="dues-columnes dues-columnes-text">
+
+            <!-- secció accessibilitat WAI-->
+            <section class="seccio-wai">
+                <h2>La iniciativa d’accessibilitat web (<abbr title="Web Accessibility Initiative">WAI</abbr>)</h2>
+                <p>
+                    És una activitat desenvolupada pel <cite>W3C</cite> per tal de facilitar l’accés a les persones amb
+                    discapacitat.
+                </p>
+
+                <img src="img/w3c.jpg" alt="Icona WAI (Web Accessibility Initiative)" class="imatge-flotant-w3c">
+
+                <p><strong>Tasques:</strong></p>
+                <ul style="margin-left: 50px;">
+                    <li>Desenvolupament de pautes d’accessibilitat</li>
+                    <li>Millora de les eines per a l’avaluació i reparació d’accessibilitat web</li>
+                    <li>Conscienciació sobre el disseny accessible de pàgines web</li>
+                </ul>
+
+                <p>
+                    <a href="https://w3c.es/Divulgacion/GuiasBreves/Accesibilidad" target="_blank"
+                        rel="noopener noreferrer" class="link-w3c">
+                        Accedir a les guies del W3C
+                    </a>
+                </p>
+
+                <!-- secció exemple government -->
+                <section class="exemple-government">
+                    <h2 class="h2-government">Government - la web accessible</h2>
+                    <p>Government.se ofereix opcions d’accessibilitat.</p>
+
+                    <figure>
+                        <img src="img/img-govemment.jpg" alt="captura del lloc web government.se">
+                        <figcaption>Exemple de web accessible</figcaption>
+                    </figure>
+
+                    <p>
+                        <a href="http://www.government.se/" target="_blank" rel="noopener noreferrer"
+                            class="link-government">
+                            Accedir a government.se
+                        </a>
+                    </p>
+                </section>
+
+            </section>
+
+            <!-- secció usabilitat -->
+            <section class="seccio-usabilitat-experts">
+
+                <h2><span lang="en"><em>Jakob Nielsen</em></span>, expert en Usabilitat</h2>
+                <p>
+                    <img src="img/jakob-nielsen1.jpg" alt="imatge relacionada amb jakob nielsen"
+                        style="float: left;margin-right: 16px;">
+                    Es considera que és un dels creadors del concepte d'usabilitat.
+                </p>
+                <p>El 1997 va publicar dos breus articles sobre com preparar textos per publicar-se en webs que han
+                    marcat des de
+                    llavors les pautes de la usabilitat.</p>
+                <p>És una de les persones més respectades a nivell mundial en usabilitat web,
+                    era conegut com a "gurú" de la usabilitat.</p>
+
+                <a href="jacobnielsen.html" style="float: right;" class="link-jakob">Jakob Nielsen</a>
+                <a href="http://www.nngroup.com/" style="float: right; margin-right: 17px;">Nielsen Norman Group
+                    (NN/g)</a>
+
+                <hr class="separador-experts">
+
+                <!--Experts destacats en usabilitat (II)-->
+                <h2><span lang="en"><em>Steve Krug</em></span>, consultor expert en UX</h2>
+
+                <div>
+                    <img src="img/steve-krug.jpg" alt="Face's Steve Krug" class="imatge-flotant-steve">
+                    <img src="img/llibre-steve-krug.jpg" alt="Llibre Don't Make Me Think by Steve Krug"
+                        class="imatge-flotant-llibre">
+                    <div style="clear: both;"></div>
+                </div>
+
+                <p lang="en">
+                    Usability / UX consultant Steve Krug (pronounced "kroog")
+                    is best known as the author of <em>Don't Make Me Think</em> and <em>Rocket Surgery Made Easy</em>.
+                </p>
+
+
+                <p>
+                    El consultor <span lang="en"><em>Steve Krug</em></span> és l'autor de
+                    <span lang="en" style="color:black; font-weight:bold;">
+                        <em>Don't Make Me Think</em>
+                    </span>
+                    (No em facis pensar), un llibre sobre usabilitat que ha tingut molta influència
+                    des de la seva publicació.
+                </p>
+                <div>
+                    <img src="img/logo-steve-krug.jpg" alt="Steve Krug" class="imatge-flotant-logo-steve">
+                    <div style="clear: both;"></div>
+                </div>
+
+                <a href="stevekrug.html" style="float: right;">Steve Krug</a>
+                <a href="http://www.sensible.com/" class="link-nng">
+                    Usability / UX consultant (NN/g)
+                </a>
+
+            </section>
+
+        </div>
+
+        <!-- secció col.laboracions -->
+        <section class="seccio-col·laboracions">
+            <h2>Col·laboracions</h2>
+            <h3>SOC &ndash; vei d'Ocupació de Catalunya</h3>
+            <p>
+                <span>Generalitat</span> &middot;
+                <span>UE</span> &middot;
+                <span>Fons Social Europeu</span>
+            </p>
+
+            <figure>
+                <img src="img/3-logos.jpg" alt="Logotips col·laboradors">
+            </figure>
+        </section>
+
+    </main>
+
+    <!-- PEU DE PÀGINA -->
+    <footer class="peu-pagina">
+        <p>&copy; Diana Urbano, per CIFO Barcelona La Violeta</p>
+    </footer>
+
+</body>
+
+</html>
