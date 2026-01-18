@@ -41,4 +41,5 @@ Aquest exercici em permet practicar la creació de pàgines web accessibles i us
 ---
 
 **Autora:** Diana Urbano Fernandez
-**Rol:** Dissenyadora Gràfica | UX/UI | Frontend
+**Rol:** Dissenyadora Gràfica | UX/UI | Frontend![Captura1-github](https://github.com/user-attachments/assets/c5935087-1ebd-4797-84a6-07eb90db8c21)
+
